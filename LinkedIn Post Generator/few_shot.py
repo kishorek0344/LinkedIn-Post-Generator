@@ -4,7 +4,7 @@ import pandas as pd
 
 
 class FewShotPosts:
-    def __init__(self, file_path="Data/processed_posts.json"):
+    def __init__(self, file_path="LinkedIn Post Generator/Data/processed_posts.json"):
         self.df = None
         self.unique_tags = None
         self.load_posts(file_path)
@@ -41,3 +41,4 @@ if __name__ == "__main__":
     fs = FewShotPosts()
     posts = fs.get_filtered_posts("Short", "tounglish", "Job Search")
     print(posts)
+
